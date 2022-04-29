@@ -1,19 +1,5 @@
-from tkinter import *
-from datetime import datetime
+from datetime import *
 
-# I created the window
-from xml.etree.ElementTree import tostring
-
-root = Tk()
-root.title("Calculator")
-root.geometry("450x450")
-icon = PhotoImage(file='alarm_logo.png')
-root.iconphoto(True, icon)
-
-#
-now = datetime.now()
-while now != '2022-04-28 10:05:38':
-    now = datetime.now()
-    print(now)
-
-root.mainloop()
+hour = int(input("Give me the hour"))
+minute = int(input("Give me the minute"))
+second = int(input("Give me the seconds"))
